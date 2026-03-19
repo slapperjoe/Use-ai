@@ -1,0 +1,119 @@
+# Node
+node_modules
+dist
+out
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+
+.vscode-test
+*.vsix
+.vscode/*.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# Webview Build
+webview-build
+src-tauri/webview/dist/
+src-tauri/webview/build/
+src-tauri/webview/.vite/
+
+# Sidecar Bundle
+sidecar-bundle/
+sidecar/bundle.js
+sidecar/*.exe
+sidecar/apinox-sidecar
+sidecar/apinox-sidecar.exe
+sidecar/dist/
+
+# Tauri Build Artifacts
+src-tauri/target/
+src-tauri/WixTools/
+# src-tauri/gen/ is intentionally committed (Android/iOS project files)
+src-tauri/gen/android/.gradle/
+src-tauri/gen/android/app/build/
+src-tauri/gen/android/build/
+src-tauri/gen/apple/build/
+
+# Rust workspace build artifacts (root-level target/ from workspace Cargo.toml)
+target/
+
+# APInox User Data & Configuration
+.apinox/
+__blobstorage__/
+__queuestorage__/
+*.enc
+secrets.enc
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+playwright-report/
+test-results/
+.nyc_output/
+
+# Compiled config files
+vitest.config.js
+vitest.config.js.map
+playwright.config.js
+playwright.config.js.map
+
+# Transpiled JS files from TypeScript sources
+shared/src/**/*.js
+shared/src/**/*.js.map
+src/**/*.js
+src/**/*.js.map
+sidecar/src/**/*.js
+sidecar/src/**/*.js.map
+
+# Sample organization data (user-specific)
+Samples/Organisation/*
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+batch-wsdl.zip
+batch-wsdl/**
+apinox-0.16.114-1-x86_64.pkg.tar.zst
